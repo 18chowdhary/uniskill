@@ -3,12 +3,11 @@ Whether you are just learning or a unicycle veteran, you may want to know how sk
 ## Our motion sensor solves YOUR problems!
 The heart of the Uniskill is a 3-axis accelerometer that measures the motion of the unicycle as it is ridden. The sensor is attached to unicycle frame, measuring tips, tilts, and tumbles of the rider. The data from this sensor are used to calculate the amount of effort the rider spends balancing the Unicycle; an experienced rider uses less effort to balance the unicycle than a new rider uses, so the experienced rider will have less motion overall.
 ### How we calculate effort
-1. Acquire time domain accelerometer data
-1. Calculate net acceleration
-1. Discrete Fourier Transform net acceleration
-1. Calculate power over all frequencies as the variance of the DFT
-1. Normalize power to the ideal unicyclist
-
+1. Acquire time domain accelerometer data.
+2. Calculate the magnitude of the net acceleration.
+3. Use the discrete Fourier transform on the net acceleration to convert the net acceleration from the time-domain to the frequency domain. 
+4. Calculate power over all frequencies as the variance of the DFT
+5. Normalize power to the ideal unicyclist
 ### Why does this calculation work?
 
 ## Do
