@@ -18,7 +18,13 @@ Our 3-axis accelerometer measures the motion of the unicycle as it is ridden. Th
 ![img](https://latex.codecogs.com/gif.latex?USI%20%3D%20%5Cfrac%7BP%7D%7BP_%7Bideal%7D%7D)
 
 ### Compare to model
+![img](https://i.imgur.com/rZw0E8A.png)
 
-![img](https://i.imgur.com/DDS9Iyt.png)
+The above figure shows the free body diagram we constructed when we built our model. Because the Uniskill sensor is attached to the rod of the unicycle, we abstracted our view of the unicycle to include only the rod, with the rider's mass included within the rod's mass. We also assume that there are no frictional forces acting on the rod. We also constructed a specific coordinate system, where the x-axis lines up laterally with the direction of motion of the unicycle, the y-axis lines up with the pedals/the axis of rotation, and the z-axis lines up vertically with the force of gravity.
+
+The major forces acting on the rod are the force of gravity, acting at the center of mass, and the two balancing forces acting at either end. These two balancing forces must be the same in order for there to be no torque; when they are not the same, torque is generated and the rod tips or tilts appropriately.
+
+Considering our defined coordinate system and the forces that would be acting on the system if it were stable, we determined that in the ideal scenario, the acceleration on the x-axis and y-axis would be 0 m/s^2 and the acceleration on the z-axis would be 9.8 m/s^2 (g). The acceleration on all axes would be constant; therefore, there would be a frequency of 0Hz on each axis.
+
 ## Results
 ## Future
