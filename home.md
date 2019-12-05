@@ -9,12 +9,12 @@ Our 3-axis accelerometer measures the motion of the unicycle as it is ridden. Th
 1. Calculate net acceleration<br>
 ![img](https://latex.codecogs.com/gif.latex?a%28t%29%3D%5Csqrt%20%7Ba_x%5E2%28t%29&plus;a_y%5E2%28t%29&plus;a_z%5E2%28t%29%7D)
 1. Discrete Fourier Transform net acceleration<br>
-![img](https://latex.codecogs.com/gif.latex?A%5Bf%5D%3Dfft%5Cleft%20%5C%7B%20a%28t%29%20%5Cright%20%5C%7D)
-1. Calculate energy across all frequencies of net accleration as the Energy Spectral Density (ESD)
+![img](https://latex.codecogs.com/gif.latex?A%5Bf%5D%3Ddft%5Cleft%20%5C%7B%20a%28t%29%20%5Cright%20%5C%7D)
+1. Calculate Energy Spectral Density (ESD) using the covariance method
 ![img](https://latex.codecogs.com/gif.latex?S_%7Bxx%7D%5Bf%5D%20%3D%20A%5Bf%5DA%5E*%5Bf%5D)
 1. Calculate net power to represent effort<br>
 ![img](https://latex.codecogs.com/gif.latex?P%20%3D%20%5Cfrac%7B1%7D%7B%5Cpi%7D%20%5Cint%20S_%7Bxx%7D%28f%29df)
-1. Normalize power to the ideal unicyclist<br>
+1. Normalize power to the ideal unicyclist, giving the Unicycle Skill Index (USI)<br>
 ![img](https://latex.codecogs.com/gif.latex?USI%20%3D%20%5Cfrac%7BP%7D%7BP_%7Bideal%7D%7D)
 
 ### Compare to model
@@ -27,4 +27,10 @@ The major forces acting on the rod are the force of gravity, acting at the cente
 Considering our defined coordinate system and the forces that would be acting on the system if it were stable, we determined that in the ideal scenario, the acceleration on the x-axis and y-axis would be 0 m/s^2 and the acceleration on the z-axis would be 9.8 m/s^2 (g). The acceleration on all axes would be constant; therefore, there would be a frequency of 0Hz on each axis.
 
 ## Results
+We have had three participants with the following discrete fourier transforms and net power:
+
+FFT |![img](/assets/img/NS_FFT.png)|![img](/assets/img/NF_FFT.png)|![img](/assets/img/JR_FFT.png)
+---|--- | --- | ---
+Net Power | 0.0932 | 0.1738 | 0.1033
+
 ## Future
