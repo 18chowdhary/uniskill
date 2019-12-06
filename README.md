@@ -8,7 +8,7 @@
   background-size: cover;
   }
 </style>
-<div class="parallax"></div> 
+<div class="parallax"></div>
 
 # Uniskill: The Unicycle Skill Evaluator
 Whether you are just learning or a unicycle veteran, you may want to know how skilled you are. Maybe it is to see your improvement, or perhaps it is to settle a debate with your unicycle nemesis. After you stop falling off often, how do you know how good you have gotten at unicycling? The Uniskill is a device that evaluates the ability of a unicyclist to balance and ride as smoothly as possible, settling debates and helping unicyclists all around campus improve!
@@ -30,7 +30,7 @@ Our 3-axis accelerometer measures the motion of the unicycle as it is ridden. Th
 ![img](https://latex.codecogs.com/gif.latex?USI%20%3D%20P-P_%7Bideal%7D)
 
 ### Comparing to model and quantifying skill
-![img](/assets/img/fbd_updated.png)
+![img](/assets/img/fbd_updated.PNG)
 
 The above figure shows the free body diagram we constructed when we built our model. Because the Uniskill sensor is attached to the rod of the unicycle, we abstracted our view of the unicycle to include only the rod, with the rider's mass included within the rod's mass. We also assume that there are no frictional forces acting on the rod. We also constructed a specific coordinate system, where the x-axis lines up laterally with the direction of motion of the unicycle, the y-axis lines up with the pedals/the axis of rotation, and the z-axis lines up vertically with the force of gravity.
 
