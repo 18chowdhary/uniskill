@@ -1,5 +1,5 @@
 <style>
-.parallax{
+body{
   background-image: url("https://images.unsplash.com/photo-1510414757097-4e2c73789c37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   min-height: 500px;
   background-attachment: fixed;
@@ -8,7 +8,6 @@
   background-size: cover;
   }
 </style>
-<div class="parallax"></div>
 
 # Uniskill: The Unicycle Skill Evaluator
 Whether you are just learning or a unicycle veteran, you may want to know how skilled you are. Maybe it is to see your improvement, or perhaps it is to settle a debate with your unicycle nemesis. After you stop falling off often, how do you know how good you have gotten at unicycling? The Uniskill is a device that evaluates the ability of a unicyclist to balance and ride as smoothly as possible, settling debates and helping unicyclists all around campus improve!
