@@ -7,6 +7,9 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   }
+.main-content,.page-header,p,h1,h2,h3,ol,table {
+  background-color: white;
+
 </style>
 
 # Uniskill: The Unicycle Skill Evaluator
