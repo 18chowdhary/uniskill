@@ -1,7 +1,6 @@
 <style>
 body{
   background-image: url("https://images.unsplash.com/photo-1510414757097-4e2c73789c37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-  min-height: 500px;
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
