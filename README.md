@@ -18,13 +18,14 @@ Our 3-axis gyroscope measures the motion of the unicycle as it is ridden. The se
 ![img](https://latex.codecogs.com/gif.latex?USI%20%3D%20P-P_%7Bideal%7D)
 
 ### Comparing to model and quantifying skill
+#### Free-Body Diagram
 ![img](/assets/img/fbd_updated.PNG)
-
+#### Coordinate system
 The above figure shows the free body diagram we constructed when we built our model. Because the Uniskill sensor is attached to the rod of the unicycle, we abstracted our view of the unicycle to include only the rod, with the rider's mass included within the rod's mass. We also assume that there are no frictional forces acting on the rod. We also constructed a specific coordinate system, where the unicycle x-axis points in the direction of motion of the unicycle, the unicycle y-axis is aligned with the wheel axle, and the unicycle z-axis is aligned to the unicycle rod. The global axes are aligned to the initial frame of the unicycle, with the global z-axis aligning with gravity.
-
+#### Forces and Torques
 The major forces acting on the rod are the force of gravity, acting at the center of mass, and the two balancing forces acting at either end of the rod. There is a balancing force at the top of the rod, F<sub>s</sub>, due to the rider leaning back and forth. This force acts in the opposite direction of the rod's angular velocity. There is also a balancing force at the bottom from the rod, F<sub>p</sub>, from the bearings, due to the rider pushing on the pedals. This force acts along the y-axis of the unicycle. These two balancing forces must be the same in order for there to be no torque; when they are not the same, torque is generated and the rod tips or tilts.
-
-Considering our defined coordinate system and the forces that would be acting on the system if it were stable, we determined that in the ideal scenario, the angular velocity for all axes should be zero. This means that the effort for the ideal rider would also be 0 (though this is unlikely to actually happen in reality, as riding a unicycle and staying balanced creates some measurable angular velocity as the rider tilts and rotates, ).
+#### The Ideal Unicyclist
+Considering our defined coordinate system and the forces that would be acting on the system if it were stable, we determined that in the ideal scenario, the angular velocity for all axes should be zero. This means that the effort for the ideal rider would also be 0 (though this is unlikely to actually happen in reality, as riding a unicycle and staying balanced creates some measurable angular velocity as the rider tilts and rotates).
 
 In order to compare a rider's skill to our modeled ideal unicyclist, we calculate the difference between their measured effort and the ideal power (0).
 
