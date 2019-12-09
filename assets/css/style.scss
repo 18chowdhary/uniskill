@@ -2,3 +2,18 @@
 ---
 
 @import "{{ site.theme }}";
+
+body{
+  background-image: url("http://image.flaticon.com/icons/png/512/68/68283.png");
+  background-color: #dedede;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: space;
+  background-size: 400px 400px;
+  }
+.page-header{
+  background-image: radial-gradient(#155799,#159957);
+}
+.main-content {
+  background-color: white;
+}
