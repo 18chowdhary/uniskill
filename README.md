@@ -31,9 +31,15 @@ In order to compare a rider's skill to our modeled ideal unicyclist, we calculat
 ## Results
 We tested Uniskill on three participants by asking them to ride down a straight path that was about 50m long. We collected motion data and evaluated their skill. Below are their discrete Fourier transforms and Unicycle Skill Indices:
 
-FFT |![img](/assets/img/NS_FFT.png)|![img](/assets/img/NF_FFT.png)|![img](/assets/img/JR_FFT.png)
----|--- | --- | ---
-USI | 0.0932 | 0.1738 | 0.1033
+FFT | USI
+---|---
+![img](/assets/img/NS_FFT.png)|0.0932
+![img](/assets/img/JR_FFT.png)|0.1033
+![img](/assets/img/NF_FFT.png)|0.1738
+
+
+
+
 
 ## Future
 Our prototype is calibrated for simple forward motion; in the future, we would like to adapt Uniskill to be able to handle more complicated motion, like the rider riding in a circle (which would require different motion analysis to calculate the USI).
