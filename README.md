@@ -19,7 +19,7 @@ Our 3-axis gyroscope measures the motion of the unicycle as it is ridden. The se
 
 ### Comparing to model and quantifying skill
 #### Free-Body Diagram
-![img](/assets/img/fbd_updated.PNG)
+![img](/assets/img/FBD.png)
 #### Coordinate system
 The above figure shows the free body diagram we constructed when we built our model. Because the Uniskill sensor is attached to the rod of the unicycle, we abstracted our view of the unicycle to include only the rod, with the rider's mass included within the rod's mass. We also assume that there are no frictional forces acting on the rod. We also constructed a specific coordinate system, where the unicycle x-axis points in the direction of motion of the unicycle, the unicycle y-axis is aligned with the wheel axle, and the unicycle z-axis is aligned to the unicycle rod. The global axes are aligned to the initial frame of the unicycle, with the global z-axis aligning with gravity.
 #### Forces and Torques
