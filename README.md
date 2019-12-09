@@ -42,6 +42,6 @@ FFT | USI
 
 
 ## Future
-Our prototype is calibrated for simple forward motion; in the future, we would like to adapt Uniskill to be able to handle more complicated motion, like the rider riding in a circle (which would require different motion analysis to calculate the USI).
+Our prototype and analytical process are designed for simple forward motion; in the future, we would like to adapt Uniskill to be able to handle more complicated motion, like the rider riding in a circle (which would require different motion analysis to calculate the USI).
 
-We would also like to collect data on more riders, in order to be able to compare riders to one another and get a better sense of what the USI of a highly skilled rider might actually be (rather than comparing the riders to an unachievable ideal). This may also inform a better way to calculate the USI that captures more aspects of unicycling ability.
+We would also like to collect data on more riders, in order to be able to compare riders to one another and get a better sense of what the USI of a highly skilled rider might actually be (rather than comparing the riders to an intangible ideal). This may also inform a better way to calculate the USI that captures more aspects of unicycling ability.
