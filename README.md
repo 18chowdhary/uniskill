@@ -1,10 +1,12 @@
-# Uniskill: The Unicycle Skill Evaluator
 <ul>
   <li><a href="#how-it-works">How it Works</a></li>
   <li><a href="#results">Results</a></li>
   <li><a href="#future">Future</a></li>
   <li><a href="#our-team">Our Team</a></li>
 </ul>
+
+# Uniskill: The Unicycle Skill Evaluator
+
 
 Whether you are just learning or a unicycle veteran, you may want to know how skilled you are. Maybe it is to see your improvement, or perhaps it is to settle a debate with your unicycle nemesis. After you stop falling off often, how do you know how good you have gotten at unicycling? The Uniskill is a device that evaluates the ability of a unicyclist to balance and ride as smoothly as possible, settling debates and helping unicyclists all around campus improve!
 ## Our motion sensor solves YOUR problems!

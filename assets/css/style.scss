@@ -23,11 +23,11 @@ table {
 ul {
   position:fixed;
   top: 0;
+  left: 0;
   width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
   background-color: #333;
 }
 li {
@@ -35,7 +35,7 @@ li {
 }
 li a {
   display: block;
-  color: #000;
+  color: #FFF;
   padding: 8px 16px;
   text-decoration: none;
 }
