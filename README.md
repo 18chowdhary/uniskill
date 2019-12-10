@@ -1,4 +1,6 @@
 # Uniskill: The Unicycle Skill Evaluator
+<a href="#how-it-works">How it Works</a>
+
 Whether you are just learning or a unicycle veteran, you may want to know how skilled you are. Maybe it is to see your improvement, or perhaps it is to settle a debate with your unicycle nemesis. After you stop falling off often, how do you know how good you have gotten at unicycling? The Uniskill is a device that evaluates the ability of a unicyclist to balance and ride as smoothly as possible, settling debates and helping unicyclists all around campus improve!
 ## Our motion sensor solves YOUR problems!
 The heart of the Uniskill is a 3-axis gyroscope that measures the motion of the unicycle as it is ridden. The sensor is attached to unicycle frame, measuring tips, tilts, and tumbles of the rider. The data from this sensor are used to calculate the amount of effort the rider spends balancing the Unicycle; an experienced rider uses less effort to balance the unicycle than a new rider uses, so the experienced rider will have less motion overall. We compare the rider's effort to the expected effort based on our model of a perfect rider to quantify the rider's skill.
@@ -13,9 +15,9 @@ Our 3-axis gyroscope measures the motion of the unicycle as it is ridden. The se
 1. Calculate Energy Spectral Density (ESD) using the covariance method<br>
 ![img](https://latex.codecogs.com/gif.latex?S_%7Bxx%7D%5Bf%5D%20%3D%20G%5Bf%5DG%5E*%5Bf%5D)
 1. Calculate effort as a summation of the ESD<br>
-![img](https://latex.codecogs.com/gif.latex?%5Csum_%7Bf%3D0%7D%5E%7BN-1%7D%20S_%7Bxx%7D%5Bf%5D%5CDelta%20f)
-1. Compare power to the ideal unicyclist, giving the Unicycle Skill Index (USI)<br>
-![img](https://latex.codecogs.com/gif.latex?USI%20%3D%20P-P_%7Bideal%7D)
+![img](https://latex.codecogs.com/gif.latex?E%3D%5Csum_%7Bf%3D0%7D%5E%7BN-1%7D%20S_%7Bxx%7D%5Bf%5D%5CDelta%20f)
+1. Compare effort to the ideal unicyclist, giving the Unicycle Skill Index (USI)<br>
+![img](https://latex.codecogs.com/gif.latex?USI%20%3D%20E%20-%20E_%7Bideal%7D)
 
 ### Comparing to model and quantifying skill
 #### Free-Body Diagram
@@ -27,7 +29,7 @@ The major forces acting on the rod are the force of gravity, acting at the cente
 #### The Ideal Unicyclist
 Considering our defined coordinate system and the forces that would be acting on the system if it were stable, we determined that in the ideal scenario, the angular velocity for all axes should be zero. This means that the effort for the ideal rider would also be 0 (though this is unlikely to actually happen in reality, as riding a unicycle and staying balanced creates some measurable angular velocity as the rider tilts and rotates).
 
-In order to compare a rider's skill to our modeled ideal unicyclist, we calculate the difference between their measured effort and the ideal power (0).
+In order to compare a rider's skill to our modeled ideal unicyclist, we calculate the difference between their measured effort and the ideal effort (0).
 
 ## Results
 We tested Uniskill on three participants by asking them to ride down a straight path that was about 50m long. We collected motion data and evaluated their skill. Below are their discrete Fourier transforms and Unicycle Skill Indices:
@@ -46,3 +48,10 @@ FFT | USI
 Our prototype and analytical process are designed for simple forward motion; in the future, we would like to adapt Uniskill to be able to handle more complicated motion, like the rider riding in a circle (which would require different motion analysis to calculate the USI).
 
 We would also like to collect data on more riders, in order to be able to compare riders to one another and get a better sense of what the USI of a highly skilled rider might actually be (rather than comparing the riders to an intangible ideal). This may also inform a better way to calculate the USI that captures more aspects of unicycling ability.
+
+## Our Team
+**Shreya Chowdhary**
+
+Shreya is a member of the class of 2022 and majoring in Engineering with Computing. When she's not analyzing the skill of unicyclists, she can be found investigating and practicing socially responsible engineering or baking.
+
+Michael
